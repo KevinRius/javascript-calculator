@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: grey;
 }
 
 code {
@@ -18,4 +19,12 @@ code {
 
 .App {
   width: 300px !important;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.calculator {
+  border-radius: 5px;
 }

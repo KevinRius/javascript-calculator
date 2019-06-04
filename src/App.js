@@ -19,7 +19,9 @@ class App extends Component {
       equation = this.state.result;
       this.setState({result: 0});
     }
-    if (/\D$/.test(equation) && /\D$/.test(e.target.innerText)) {}
+    if (/\D$/.test(equation) && /\D$/.test(e.target.innerText)) {
+      this.setState({result: 'ERROR'})
+    }
     else {
       equation = equation + (e.target.innerText);
       this.setState({equation})

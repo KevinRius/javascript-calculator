@@ -13,7 +13,7 @@ class App extends Component {
     if (equation === '0') {
       equation = '';
     } 
-    if (this.state.result == 'error') {
+    if (this.state.result === 'ERROR') {
       this.setState({result: 0});
     } else if (this.state.result !== 0) {
       equation = this.state.result;
@@ -38,7 +38,7 @@ class App extends Component {
       let result = eval(this.state.equation);
       this.setState({result: result});
     } else {
-      this.setState({result: 'error'});
+      this.setState({result: 'ERROR'});
     }
   }
 
